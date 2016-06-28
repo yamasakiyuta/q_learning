@@ -30,9 +30,9 @@ int main()
     printf("max=%lf",max);
 
     for(i=0;i<num_s;i++){
-	//delete[]Qtable[i];
+	delete[]Qtable[i];
     }
-    //delete[]Qtable;
+    delete[]Qtable;
 
     return 0;
 }
