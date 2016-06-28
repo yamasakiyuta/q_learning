@@ -39,5 +39,8 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/cheese_vending_machine.dir/DependInfo.cmake"
+  "CMakeFiles/greedy.dir/DependInfo.cmake"
+  "CMakeFiles/select_action.dir/DependInfo.cmake"
   "CMakeFiles/simulation.dir/DependInfo.cmake"
   )

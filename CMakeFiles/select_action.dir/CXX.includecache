@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/amsl/q_learning/q_learning/src/simulation.cpp
+/home/amsl/q_learning/q_learning/src/select_action.cpp
 stdio.h
+-
+time.h
+-
+stdlib.h
 -
 

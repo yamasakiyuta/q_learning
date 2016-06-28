@@ -49,37 +49,37 @@ include CMakeFiles/simulation.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/simulation.dir/flags.make
 
-CMakeFiles/simulation.dir/simulation.cpp.o: CMakeFiles/simulation.dir/flags.make
-CMakeFiles/simulation.dir/simulation.cpp.o: simulation.cpp
+CMakeFiles/simulation.dir/src/simulation.cpp.o: CMakeFiles/simulation.dir/flags.make
+CMakeFiles/simulation.dir/src/simulation.cpp.o: src/simulation.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/amsl/q_learning/q_learning/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/simulation.dir/simulation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/simulation.dir/simulation.cpp.o -c /home/amsl/q_learning/q_learning/simulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/simulation.dir/src/simulation.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/simulation.dir/src/simulation.cpp.o -c /home/amsl/q_learning/q_learning/src/simulation.cpp
 
-CMakeFiles/simulation.dir/simulation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulation.dir/simulation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/amsl/q_learning/q_learning/simulation.cpp > CMakeFiles/simulation.dir/simulation.cpp.i
+CMakeFiles/simulation.dir/src/simulation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulation.dir/src/simulation.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/amsl/q_learning/q_learning/src/simulation.cpp > CMakeFiles/simulation.dir/src/simulation.cpp.i
 
-CMakeFiles/simulation.dir/simulation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/simulation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/amsl/q_learning/q_learning/simulation.cpp -o CMakeFiles/simulation.dir/simulation.cpp.s
+CMakeFiles/simulation.dir/src/simulation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulation.dir/src/simulation.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/amsl/q_learning/q_learning/src/simulation.cpp -o CMakeFiles/simulation.dir/src/simulation.cpp.s
 
-CMakeFiles/simulation.dir/simulation.cpp.o.requires:
-.PHONY : CMakeFiles/simulation.dir/simulation.cpp.o.requires
+CMakeFiles/simulation.dir/src/simulation.cpp.o.requires:
+.PHONY : CMakeFiles/simulation.dir/src/simulation.cpp.o.requires
 
-CMakeFiles/simulation.dir/simulation.cpp.o.provides: CMakeFiles/simulation.dir/simulation.cpp.o.requires
-	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/simulation.cpp.o.provides.build
-.PHONY : CMakeFiles/simulation.dir/simulation.cpp.o.provides
+CMakeFiles/simulation.dir/src/simulation.cpp.o.provides: CMakeFiles/simulation.dir/src/simulation.cpp.o.requires
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/simulation.cpp.o.provides.build
+.PHONY : CMakeFiles/simulation.dir/src/simulation.cpp.o.provides
 
-CMakeFiles/simulation.dir/simulation.cpp.o.provides.build: CMakeFiles/simulation.dir/simulation.cpp.o
+CMakeFiles/simulation.dir/src/simulation.cpp.o.provides.build: CMakeFiles/simulation.dir/src/simulation.cpp.o
 
 # Object files for target simulation
 simulation_OBJECTS = \
-"CMakeFiles/simulation.dir/simulation.cpp.o"
+"CMakeFiles/simulation.dir/src/simulation.cpp.o"
 
 # External object files for target simulation
 simulation_EXTERNAL_OBJECTS =
 
-simulation: CMakeFiles/simulation.dir/simulation.cpp.o
+simulation: CMakeFiles/simulation.dir/src/simulation.cpp.o
 simulation: CMakeFiles/simulation.dir/build.make
 simulation: CMakeFiles/simulation.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable simulation"
@@ -89,7 +89,7 @@ simulation: CMakeFiles/simulation.dir/link.txt
 CMakeFiles/simulation.dir/build: simulation
 .PHONY : CMakeFiles/simulation.dir/build
 
-CMakeFiles/simulation.dir/requires: CMakeFiles/simulation.dir/simulation.cpp.o.requires
+CMakeFiles/simulation.dir/requires: CMakeFiles/simulation.dir/src/simulation.cpp.o.requires
 .PHONY : CMakeFiles/simulation.dir/requires
 
 CMakeFiles/simulation.dir/clean:

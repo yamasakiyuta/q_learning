@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/greedy.dir/src/greedy.cpp.o  -o greedy -rdynamic 

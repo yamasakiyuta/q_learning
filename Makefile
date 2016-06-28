@@ -99,6 +99,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cheese_vending_machine
+
+# Build rule for target.
+cheese_vending_machine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cheese_vending_machine
+.PHONY : cheese_vending_machine
+
+# fast build rule for target.
+cheese_vending_machine/fast:
+	$(MAKE) -f CMakeFiles/cheese_vending_machine.dir/build.make CMakeFiles/cheese_vending_machine.dir/build
+.PHONY : cheese_vending_machine/fast
+
+#=============================================================================
+# Target rules for targets named greedy
+
+# Build rule for target.
+greedy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 greedy
+.PHONY : greedy
+
+# fast build rule for target.
+greedy/fast:
+	$(MAKE) -f CMakeFiles/greedy.dir/build.make CMakeFiles/greedy.dir/build
+.PHONY : greedy/fast
+
+#=============================================================================
+# Target rules for targets named select_action
+
+# Build rule for target.
+select_action: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 select_action
+.PHONY : select_action
+
+# fast build rule for target.
+select_action/fast:
+	$(MAKE) -f CMakeFiles/select_action.dir/build.make CMakeFiles/select_action.dir/build
+.PHONY : select_action/fast
+
+#=============================================================================
 # Target rules for targets named simulation
 
 # Build rule for target.
@@ -111,29 +150,101 @@ simulation/fast:
 	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/build
 .PHONY : simulation/fast
 
-simulation.o: simulation.cpp.o
-.PHONY : simulation.o
+src/cheese_vending_machine.o: src/cheese_vending_machine.cpp.o
+.PHONY : src/cheese_vending_machine.o
 
 # target to build an object file
-simulation.cpp.o:
-	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/simulation.cpp.o
-.PHONY : simulation.cpp.o
+src/cheese_vending_machine.cpp.o:
+	$(MAKE) -f CMakeFiles/cheese_vending_machine.dir/build.make CMakeFiles/cheese_vending_machine.dir/src/cheese_vending_machine.cpp.o
+.PHONY : src/cheese_vending_machine.cpp.o
 
-simulation.i: simulation.cpp.i
-.PHONY : simulation.i
+src/cheese_vending_machine.i: src/cheese_vending_machine.cpp.i
+.PHONY : src/cheese_vending_machine.i
 
 # target to preprocess a source file
-simulation.cpp.i:
-	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/simulation.cpp.i
-.PHONY : simulation.cpp.i
+src/cheese_vending_machine.cpp.i:
+	$(MAKE) -f CMakeFiles/cheese_vending_machine.dir/build.make CMakeFiles/cheese_vending_machine.dir/src/cheese_vending_machine.cpp.i
+.PHONY : src/cheese_vending_machine.cpp.i
 
-simulation.s: simulation.cpp.s
-.PHONY : simulation.s
+src/cheese_vending_machine.s: src/cheese_vending_machine.cpp.s
+.PHONY : src/cheese_vending_machine.s
 
 # target to generate assembly for a file
-simulation.cpp.s:
-	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/simulation.cpp.s
-.PHONY : simulation.cpp.s
+src/cheese_vending_machine.cpp.s:
+	$(MAKE) -f CMakeFiles/cheese_vending_machine.dir/build.make CMakeFiles/cheese_vending_machine.dir/src/cheese_vending_machine.cpp.s
+.PHONY : src/cheese_vending_machine.cpp.s
+
+src/greedy.o: src/greedy.cpp.o
+.PHONY : src/greedy.o
+
+# target to build an object file
+src/greedy.cpp.o:
+	$(MAKE) -f CMakeFiles/greedy.dir/build.make CMakeFiles/greedy.dir/src/greedy.cpp.o
+.PHONY : src/greedy.cpp.o
+
+src/greedy.i: src/greedy.cpp.i
+.PHONY : src/greedy.i
+
+# target to preprocess a source file
+src/greedy.cpp.i:
+	$(MAKE) -f CMakeFiles/greedy.dir/build.make CMakeFiles/greedy.dir/src/greedy.cpp.i
+.PHONY : src/greedy.cpp.i
+
+src/greedy.s: src/greedy.cpp.s
+.PHONY : src/greedy.s
+
+# target to generate assembly for a file
+src/greedy.cpp.s:
+	$(MAKE) -f CMakeFiles/greedy.dir/build.make CMakeFiles/greedy.dir/src/greedy.cpp.s
+.PHONY : src/greedy.cpp.s
+
+src/select_action.o: src/select_action.cpp.o
+.PHONY : src/select_action.o
+
+# target to build an object file
+src/select_action.cpp.o:
+	$(MAKE) -f CMakeFiles/select_action.dir/build.make CMakeFiles/select_action.dir/src/select_action.cpp.o
+.PHONY : src/select_action.cpp.o
+
+src/select_action.i: src/select_action.cpp.i
+.PHONY : src/select_action.i
+
+# target to preprocess a source file
+src/select_action.cpp.i:
+	$(MAKE) -f CMakeFiles/select_action.dir/build.make CMakeFiles/select_action.dir/src/select_action.cpp.i
+.PHONY : src/select_action.cpp.i
+
+src/select_action.s: src/select_action.cpp.s
+.PHONY : src/select_action.s
+
+# target to generate assembly for a file
+src/select_action.cpp.s:
+	$(MAKE) -f CMakeFiles/select_action.dir/build.make CMakeFiles/select_action.dir/src/select_action.cpp.s
+.PHONY : src/select_action.cpp.s
+
+src/simulation.o: src/simulation.cpp.o
+.PHONY : src/simulation.o
+
+# target to build an object file
+src/simulation.cpp.o:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/simulation.cpp.o
+.PHONY : src/simulation.cpp.o
+
+src/simulation.i: src/simulation.cpp.i
+.PHONY : src/simulation.i
+
+# target to preprocess a source file
+src/simulation.cpp.i:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/simulation.cpp.i
+.PHONY : src/simulation.cpp.i
+
+src/simulation.s: src/simulation.cpp.s
+.PHONY : src/simulation.s
+
+# target to generate assembly for a file
+src/simulation.cpp.s:
+	$(MAKE) -f CMakeFiles/simulation.dir/build.make CMakeFiles/simulation.dir/src/simulation.cpp.s
+.PHONY : src/simulation.cpp.s
 
 # Help Target
 help:
@@ -141,12 +252,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... cheese_vending_machine"
 	@echo "... edit_cache"
+	@echo "... greedy"
 	@echo "... rebuild_cache"
+	@echo "... select_action"
 	@echo "... simulation"
-	@echo "... simulation.o"
-	@echo "... simulation.i"
-	@echo "... simulation.s"
+	@echo "... src/cheese_vending_machine.o"
+	@echo "... src/cheese_vending_machine.i"
+	@echo "... src/cheese_vending_machine.s"
+	@echo "... src/greedy.o"
+	@echo "... src/greedy.i"
+	@echo "... src/greedy.s"
+	@echo "... src/select_action.o"
+	@echo "... src/select_action.i"
+	@echo "... src/select_action.s"
+	@echo "... src/simulation.o"
+	@echo "... src/simulation.i"
+	@echo "... src/simulation.s"
 .PHONY : help
 
 
